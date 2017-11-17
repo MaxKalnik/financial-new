@@ -33,4 +33,63 @@
       &:first-child
         color: #007F0C
 
+.text-box--blue
+  border-radius: 5px
+  .breadcrumbs
+    &__wrap
+      width: auto
+      margin-bottom: 32px
+      box-shadow: none
+
+    &__link
+      color: $main_color
+      letter-spacing: 0
+      line-height: 42px
+      text-decoration: none
+      $ultraThin()
+      &:hover
+        text-decoration underline
+        text-decoration-color: #A3DCF0
+
+    &__item
+      &:nth-child(3),
+      &:last-child
+        overflow: hidden
+        text-overflow: ellipsis
+
+  .ranking-table
+    background: linear-gradient(90deg,#1c97ed 0,#43ccf8 100%)
+
+  tbody
+    tr
+      background: #ffffff
+      border-bottom: 1px solid #e6eef2
+      &:nth-child(odd)
+        background: #f2f6f8
+      &:last-child
+        border-bottom: none
+
+    td
+      &:first-child
+        color: #859ba6
+
+  .mobile-only
+    .ranking-table--fixed
+      background: linear-gradient(90deg,#198dea 0,#2099ED 100%)
+
+.btn-go-back
+  color: #24A0EE
+  border: 1px solid #24A0EE
+  border-radius: 5px
+  padding: 12px 24px
+  font-size: 12px
+  line-height: 26px
+  font-weight: 600
+  text-transform: uppercase
+  cursor: pointer
+  transition: .25s
+  &:hover
+    background: #24A0EE
+    color: #ffffff
+    border-color: #ffffff
 
